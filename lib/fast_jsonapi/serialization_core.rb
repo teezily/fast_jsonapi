@@ -26,7 +26,7 @@ module FastJsonapi
       end
     end
 
-    class_methods do
+    module ClassMethods
       def id_hash(id, record_type, default_return=false)
         if id.present?
           { id: id.to_s, type: record_type }

@@ -109,7 +109,7 @@ module FastJsonapi
       resource.respond_to?(:size) && !resource.respond_to?(:each_pair)
     end
 
-    class_methods do
+    module ClassMethods
 
       def inherited(subclass)
         super(subclass)
